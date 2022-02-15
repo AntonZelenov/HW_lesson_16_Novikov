@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/css/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -64,39 +70,63 @@
       </div>
     </section>
 
-    <section class="skills_section">
+    <section class="skills">
       <div class="container">
-        <h1>Skills</h1>
-        <p class="skills_text">I work in such programs as</p>
-        <ul class="skills_list">
-          <li class="skills_item">
-            <img src="images/Skill_Ps.png" alt="Ps-Skill" class="skills_logo" />
-            <p class="skills_undertext">
-              Adobe <br />
-              Photoshop
-            </p>
+        <div class="skills__title">
+          <h1>Skills</h1>
+        </div>
+        <div class="skills__text">
+          <p>I work in such programs as</p>
+        </div>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <div class="skills__logotype">
+              <img
+                src="images/Skill_Ps.png"
+                alt="Ps-Skill"
+                class="skills_logo"
+              />
+              <p class="skills_undertext">
+                Adobe <br />
+                Photoshop
+              </p>
+            </div>
             <img src="images/Stars_4.png" alt="Stars_4" class="skills_rate" />
           </li>
-          <li class="skills_item">
-            <img src="images/Skill_Ai.png" alt="Ai-skill" class="skills_logo" />
-            <p class="skills_undertext">
-              Adobe <br />
-              Illustrator
-            </p>
+          <li class="skills__item">
+            <div class="skills__logotype">
+              <img
+                src="images/Skill_Ai.png"
+                alt="Ai-skill"
+                class="skills_logo"
+              />
+              <p class="skills_undertext">
+                Adobe <br />
+                Illustrator
+              </p>
+            </div>
             <img src="images/Stars_3.png" alt="Stars_3" class="skills_rate" />
           </li>
-          <li class="skills_item">
-            <img src="images/Skill_Ae.png" alt="Ae-Skill" class="skills_logo" />
-            <p class="skills_undertext">Adobe <br />After Effects</p>
+          <li class="skills__item">
+            <div class="skills__logotype">
+              <img
+                src="images/Skill_Ae.png"
+                alt="Ae-Skill"
+                class="skills_logo"
+              />
+              <p class="skills_undertext">Adobe <br />After Effects</p>
+            </div>
             <img src="images/Stars_4.png" alt="Stars_4" class="skills_rate" />
           </li>
-          <li class="skills_item">
-            <img
-              src="images/Skill_Figma.png"
-              alt="Figma-Skill"
-              class="skills_logo"
-            />
-            <p class="skills_undertext_figma">Figma <br /></p>
+          <li class="skills__item">
+            <div class="skills__logotype">
+              <img
+                src="images/Skill_Figma.png"
+                alt="Figma-Skill"
+                class="skills_logo"
+              />
+              <p class="skills_undertext_figma">Figma <br /></p>
+            </div>
             <img src="images/Stars_4.png" alt="Stars_4" class="skills_rate" />
           </li>
         </ul>
@@ -132,8 +162,38 @@
       </div>
     </section>
 
-    <footer>
-      <p>Footer</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__title">
+          <h2>Contacts</h2>
+        </div>
+        <div class="footer__text">
+          <span>Want to know more or just chat?</span>
+          <span>You are welcome!</span>
+        </div>
+        <div class="footer__button-holder">
+          <button class="footer__button">Send message</button>
+        </div>
+        <div class="icon-holder">
+          <div class="icon-holder__images">
+            <a href="#"><img src="images/linkedin.svg" alt="linkedin" /></a>
+          </div>
+          <div class="icon-holder__images">
+            <a href="#"><img src="images/insta.svg" alt="instagram" /></a>
+          </div>
+          <div class="icon-holder__images">
+            <a href="#"><img src="images/BE.svg" alt="Be" /></a>
+          </div>
+          <div class="icon-holder__images">
+            <a href="#"><img src="images/dribble.svg" alt="dribble" /></a>
+          </div>
+        </div>
+        <div class="footer__bottom-text">
+          <span>Like me on</span>
+          <span>Linedin, Instagram, Behance</span>
+          <span>Dribble</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

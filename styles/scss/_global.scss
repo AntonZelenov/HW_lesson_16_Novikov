@@ -6,6 +6,9 @@
 
 body {
   color: #070707;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 25px;
 }
 
 a {
@@ -30,7 +33,6 @@ img {
 }
 
 .header {
-  padding: 35px 0;
   background-color: white;
   position: fixed;
   z-index: 3;
@@ -75,7 +77,7 @@ img {
 }
 
 .header .container {
-  padding: 23px 0 0;
+  padding: 23px 15px 0;
 }
 
 .header .border-shadow {
@@ -137,6 +139,10 @@ img {
   line-height: 25px;
   color: #828282;
   text-shadow: 2px 4px 4px rgba(130, 130, 130, 0.5);
+
+  @include breakpoint("md") {
+    display: block;
+  }
 }
 
 .nav-link.active {
@@ -155,7 +161,7 @@ img {
     width: 50px;
     height: 40px;
     background-color: transparent;
-    border: 2px solid hsl(0, 6%, 83%);
+    border: 2px solid hsla(0, 18%, 10%, 0.075);
     border-radius: 10px;
     outline: none;
     cursor: alias;
@@ -163,7 +169,7 @@ img {
 
     & .span1 {
       width: 32px;
-      height: 2px;
+      height: 3px;
       background-color: rgb(184, 185, 185);
       position: absolute;
       top: 7px;
@@ -174,7 +180,7 @@ img {
 
     & .span-mid {
       width: 32px;
-      height: 2px;
+      height: 3px;
       background-color: rgb(184, 185, 185);
       position: absolute;
       top: 50%;
@@ -185,7 +191,7 @@ img {
 
     & .span2 {
       width: 32px;
-      height: 2px;
+      height: 3px;
       background-color: rgb(184, 185, 185);
       position: absolute;
       bottom: 7px;
@@ -207,7 +213,7 @@ img {
 .hero-title {
   font-size: 48px;
   line-height: 64px;
-  padding-top: 34px;
+  padding-top: 109px;
   padding-bottom: 40px;
 }
 
@@ -249,8 +255,8 @@ img {
 
 /*Skills section*/
 
-.skills_section {
-  padding: 100px 0;
+.skills {
+  padding-top: 100px;
   text-align: center;
 
   @include breakpoint("md") {
@@ -258,14 +264,17 @@ img {
   }
 }
 
-.skills_text {
-  padding-top: 44px;
-  margin-bottom: 40px;
+.skills__title {
+  margin-bottom: 44px;
+}
+
+.skills__text {
+  margin-bottom: 78px;
   font-size: 18px;
   line-height: 25px;
 }
 
-.skills_list {
+.skills__list {
   list-style: none;
   text-align: center;
   display: flex;
@@ -277,13 +286,14 @@ img {
   }
 }
 
-.skills_item {
+.skills__item {
   width: 25%;
   margin: 0 auto;
   padding: 0 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   @include breakpoint("md") {
     width: 50%;
@@ -363,6 +373,7 @@ img {
 }
 
 .portfolio_undertext {
+  padding-top: 15px;
   font-size: 18px;
   line-height: 25px;
   text-decoration: underline;
@@ -371,4 +382,71 @@ img {
 .portfolio_photo_last {
   max-width: 940px;
   padding-bottom: 100px;
+}
+
+/*Footer*/
+
+.footer {
+  &__title {
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 78px;
+
+    & span {
+      display: block;
+    }
+  }
+  &__bottom-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+    margin-bottom: 159px;
+
+    & span {
+      display: block;
+    }
+  }
+  &__button-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__button {
+    max-width: 180px;
+    width: 100%;
+    height: 42px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    font-family: "Open sans";
+
+    &:hover {
+      color: #070707;
+      background-color: transparent;
+      font-weight: 700;
+    }
+  }
+}
+
+.icon-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 44px;
+
+  &__images {
+    padding: 0 30px;
+  }
 }
