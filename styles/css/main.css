@@ -45,13 +45,33 @@ img {
   opacity: 1;
   visibility: visible;
 }
+.header.active .nav-opener {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border-color: transparent;
+  background-color: rgba(201, 202, 202, 0.829);
+}
 .header.active .nav-opener .span1 {
-  -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
+  left: 7px;
+  -webkit-transform: translateY(15px) rotate(45deg);
+          transform: translateY(15px) rotate(45deg);
+  -webkit-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
+  background-color: #f6f6f6;
+}
+.header.active .nav-opener .span-mid {
+  display: none;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
 }
 .header.active .nav-opener .span2 {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
+  left: 7px;
+  -webkit-transform: translateY(-14px) rotate(-45deg);
+          transform: translateY(-14px) rotate(-45deg);
+  -webkit-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
+  background-color: #f6f6f6;
 }
 
 .header .container {
@@ -153,29 +173,47 @@ img {
     right: 20px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 40px;
-    height: 20px;
+    width: 50px;
+    height: 40px;
     background-color: transparent;
-    border: none;
+    border: 2px solid #d6d1d1;
+    border-radius: 10px;
     outline: none;
     cursor: alias;
     z-index: 5;
   }
   .nav-opener .span1 {
-    width: 40px;
-    height: 4px;
-    background-color: #6490b3;
+    width: 32px;
+    height: 2px;
+    background-color: #b8b9b9;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 7px;
+    left: 7px;
+    border-radius: 2px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .nav-opener .span-mid {
+    width: 32px;
+    height: 2px;
+    background-color: #b8b9b9;
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    border-radius: 2px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .nav-opener .span2 {
-    width: 40px;
-    height: 4px;
-    background-color: #6490b3;
+    width: 32px;
+    height: 2px;
+    background-color: #b8b9b9;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 7px;
+    left: 7px;
+    border-radius: 2px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
 }
 
